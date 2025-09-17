@@ -5,7 +5,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host="localhost",
     user="root", 
-    password="root1.", # senha do banco de dados de vocês
+    password="", # senha do banco de dados de vocês
     database="ecommerce_db" # nome do banco de dados de vocês
 )
 cursor = conn.cursor()

@@ -5,7 +5,6 @@ import unicodedata
 # --- Carregar CSVs ---
 df_marcas = pd.read_csv("../dados/marcas_ofc.csv", sep=';', encoding='utf-8-sig')
 df_marcas.columns = df_marcas.columns.str.strip()
-print(df_marcas.columns)
 
 df_produtos = pd.read_csv("../dados/produtos_ofc.csv",sep=';', encoding='utf-8-sig')
 df_produtos.columns = df_produtos.columns.str.strip()
@@ -25,7 +24,7 @@ brand_map = dict(zip(df_marcas['brand_norm'], df_marcas['Id']))
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="root1.",
+    password="",#senha do banco de dados de vocês
     database="ecommerce_db"
 )
 cursor = conn.cursor()
