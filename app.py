@@ -10,7 +10,7 @@ def get_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="36353658",
+        password="",
         database="ecommerce_db"
     )
 
@@ -228,3 +228,4 @@ elif menu_principal == "Gráficos":
         ax3.set_ylabel("")
         ax3.set_title("Distribuição de Produtos Clean")
         st.pyplot(fig3)
+
